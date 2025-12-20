@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and Buttons </title>
+</head>
+<body>
+    <!-- TODO
+     1. Setup a button with the following attributes:
+        - type
+        - id
+        - class
+        - style (add some basic styling like background color, font size, padding)
+        - onclick (add a simple JavaScript alert function) 
+     2. Create a basic structure of a form 
+     3. add the 2 main attributes: action and method
+     4. Show that HTML elements can be nested inside a form - div, heading e.t.c
+     5. Highlight that a form by default will submit on the same page
+     6. Create a form with the following fields:
+        - Text input for "Name"
+        - Add required attribute
+        - Add value attribute
+        - Password input for "Password"
+     7. show implicit and explicit labels 
+     8. show buttons with different types: submit, reset, button
+     9. Embed a form
+    -->
+        <!-- <form action="/">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <hr>
+            <button>Submit</button>
+        </form> -->
+
+        <!-- <button> Press me </button> -->
+        <form action="/" method="get">
+            <h1> Form Example </h1>
+            
+                <label for="englishIsHard"> English is really hard 💆  </label>
+                <div style="margin-block-start: 10px;"> 
+                    <input type="text" id="englishIsHard" name="english" maxlength="10"> </div>
+            <p> <strong> fhhdhdhd hshhsh h</strong></p>
+            <span>gdgggd gdgd </span>
+           <div style="margin-block-start: 10px;">
+             <label>
+                Password
+                <input type="password" name="password" />
+            </label>
+           </div>
+           <label for="leavemealone"> Number</label>
+           <div>
+            <input type="number" name="number" id="leavemealone" max="40">
+           </div>
+           <label for="okay"> mY ERROR CHECK IS SHOUTING AT ME </label>
+         <textarea name="testing" id="okay" rows="10"></textarea>
+           <div style="margin-block-start:10px">
+            <button type="submit" style="background-color: aqua;"> Pause </button>
+           </div>
+        </form>
+
+        <label for="">
+            file
+           <input type="file"> 
+        </label>
+
+        <a href="hdhhd" style="background-color:rgb(233, 233, 237); border:1px solid; text-decoration:none; color: black;"> Hyeye </a>
+        <button> shotuing gjd </button>
+
+        <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf9Pyt5Xiv9Qv9NmL-v1mfVj7SbD_CwQNGUFfe8G4T5q8L89w/viewform?embedded=true" width="300" height="300" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
+</body>
+</html>
