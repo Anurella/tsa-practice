@@ -1,123 +1,3 @@
-/* TO DO 
-show the following 
-1. - wildcard element
-2. - type selector 
-3. - class selector
-4. - class selector when html element has muliple classes
-5. - show chained classes 
-6. - id selector
-7. - attribute selector 
-    - presence and value
-    - substring 
-8. - grouped selector
-9. - psuedo class selector
-10. - psuedo element selector
-
-A. Inheritance 
-B. demonstrate specifity 
-*/
-
-/* universal selector */
-
-* {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-/* type selector */
-p {
-    font-size:20px;
-    color: green;
-}
-
-h1,h2, h3, h4, h5, h6{
-    color: #4e0cd2;
-}
-
-.highlight {
-    background-color: rgb(241, 241, 241);
-}
-
-.borders {
-    border:3px solid rebeccapurple
-}
-
-.tester {
-    color: hotpink;
-
-}
-
-#summary {
-    padding: 10px;
-}
-/* presence of the attribute */
-[href] {
-    color:orangered
-}
-
-/* value of the attribute */
-[href="#"] {
-    font-size:25px;
-}
-
-ul {
-    list-style: circle;
-}
-
-
-/* attribute selector - substring */
-/* matches any attribute value which starts with a */
-li[data-custom] {
-  font-weight:800;
-}
-
-/* matches any attribute value which ends with a */
-li[class$="stef"] {
-    font-style: italic;
-}
-
-/* matches any attribute value where a 
-appears anywhere in the string */
-li[class*="iam"] {
-  color: rgb(115, 34, 208);
-}
-
-/* psuedo classes and elements */
-
-a:hover {
-    text-decoration: none;
-    color: greenyellow;
-}
-
-a:link {
-    letter-spacing: 2px;
-}
-
-p:first-letter {
-    font-size: 200%;
-    color: orange;
-}
-
-li::marker {
-    color: purple;
-    font-size: 150%;
-}
-
-::selection {
-    background: aqua;
-}
-
-
-/* the box model
-TODO 
-1. show display values 
-2. extrinsic vs intrinsic sizing
-3. parts of a box 
-4. box-sizing values
-5. show how the additive and non additive models work 
-6. show safari vs chrome (padding, border and margin can differ)
-7. ask a student with internet explorer to show how it behaves there
-*/
-
-
 /* Reset CSS by Amaka Ndukwu */
 
 /* making use of :where to allow for low specificity making it easy to override */
@@ -127,7 +7,7 @@ TODO
 *,
 *::before,
 *::after {
-    box-sizing: content-box;
+    box-sizing: border-box;
 }
 
 /* 2. remove default margin 
@@ -175,6 +55,8 @@ padding is optional but i do this because of lists*/
     h4, h5, h6) {
     overflow-wrap: break-word;
 }
+
+
 
 /* 7. making media elements block-level */
 :where(img,
@@ -255,4 +137,49 @@ padding is optional but i do this because of lists*/
     touch-action: manipulation
 }
 
+/* my own css */
 
+html, body{
+   height:100vh;
+}
+
+body {
+    background-color: #00c1b5;
+    font-family: "Crimson Text", serif;
+    padding:20px;
+}
+
+h1 {
+    font-family: "Bitter", serif;
+    font-weight: 800;
+    text-transform:uppercase;
+    letter-spacing: 1px;
+    display: inline-block; 
+}
+
+.text-bold {
+    font-weight: 700;
+    text-align: center;
+}
+
+.text-bold * + * {
+    margin-top:-10px;
+}
+
+.text-bold a {
+   color: #fff;
+   text-decoration:none;
+}
+
+img {
+    width:100%;
+    max-width: 500px;
+    height:auto;
+    object-fit: contain;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.float-right {
+    float:right;
+}
