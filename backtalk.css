@@ -155,6 +155,7 @@ h1 {
     text-transform:uppercase;
     letter-spacing: 1px;
     display: inline-block; 
+    font-size: 6vw;
 }
 
 .text-bold {
@@ -180,6 +181,172 @@ img {
     margin-right:auto;
 }
 
-.float-right {
+/* .float-right {
     float:right;
+} */
+
+
+/* TO DO LIST
+ FLEX LAYOUT PRACTICE
+ 1. Style the article with flexbox make it a container.
+ 2. Style the sections inside the article to be identifiable
+ 3. show main axis and cross axis on the article
+ 4. direction of the main axis using the row, row-reverse, column, column-reverse
+ 5. show writing mode and direction affect on main axis and cross axis
+ 6. wrapping items - flex-wrap: wrap, nowrap
+ 7. flex-flow shorthand property
+ 8. sizing using flex shorthand - flex-grow, flex-shrink, flex-basis
+ 9. space distribution - justify-content, align-content, place-content
+ 10. aligning items - align-items, align-self
+ */
+
+ hr {
+    margin-block: 40px;
+ }
+
+ .fard {
+    background: black;
+    /* padding:30px; */
+    color:#fff;
+    border:1px solid purple;
+ }
+
+ .fard-container {
+    display: flex;
+    /* padding:20px; */
+    height:300px;
+    width:200px;
+    border:1px solid red;
+    flex-flow: column wrap;
+    align-items: center;
+    /* justify-content:space-around; */
+    /* align-content: space-between; */
+    /* place-content: space-around; */
+ }
+
+  .leavemealone {
+    /* align-self:center; */
+  }
+ /*
+ GRID LAYOUT PRACTICE
+ 1. Style the article with grid layout make it a grid container.
+ 2. 
+    - create rows and columns on the grid container (use grid-template-rows and grid-template-columns) 
+    - gap property - row-gap, column-gap, gap
+ 3. show the grid overlay using developer tools 
+ 4. show how the fr unit works, and using it in combination with other units
+ 5. show the use of minmax() and repeat() functions
+ 6. use of grid lines to place items on the grid - grid-column-start, grid-column-end, grid-row-start, grid-row-end
+ 7. show stacking of items when overlap from grid lines
+ 8. use of grid-area to place items on the grid
+ 9. space distribution - justify-content, align-content, place-content
+ 10. alignment of items - justify-items, align-items, place-items
+ 11. alignment of individual items - justify-self, align-self
+*/
+
+.grid-item {
+    background: #245;
+    color:#fff;
+    padding:10px;
+    border:1px solid orange;
 }
+
+.grid-container-1 {
+    display:grid;
+    grid-template-columns:repeat(5, minmax(100px, 40%));
+    gap:10px;
+    border:1px solid green;
+    padding:20px;
+}
+
+.item-3 {
+    grid-column-start:1;
+    grid-column-end: 3;
+}
+
+.grid-container-2 {
+    display: grid;
+    grid-template-areas: 
+    "header header header header"
+    "sidebar content content content"
+    "sidebar footer footer footer";
+    gap:10px;
+}
+
+.grid-container-2 header {
+    background:red;
+    grid-area: header;
+}
+
+.grid-container-2 aside {
+    background: yellow;
+    grid-area: sidebar;
+}
+
+.grid-container-2 main {
+ background: orange;
+    grid-area: content;
+}
+
+header {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+/* CSS rules go here */
+@media media-type and (media-feature-rule) {
+  /* CSS rules go here */
+}
+
+@media (max-height: 600px) {
+   /* Styles for screens wider than 600px */
+    body {
+     background-color: #ffcc00;
+    }
+}
+
+@media print {
+  h1 {
+    color:red;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 500px) {
+   /* Styles for viewports between 300px and 500px. */
+    body {
+     background-color: #00ff00;
+    }
+
+   
+  /* Styles for viewports wider than 50em and narrower than 60em. */
+}
+
+
+@media (orientation: landscape) {
+   /* Styles for landscape mode. */
+   body::after {
+    content: "Landscape";
+  }
+
+  body {
+    background-color: aqua;
+  }
+}
+
+@media (orientation: portrait) {
+   /* Styles for portrait mode. */
+   body::after {
+    content: "Portrait";
+  }
+
+  body {
+    background-color: #245;
+  }
+}
+
+
+
+/* responsive typography - show scaling of text based on viewport width and use of clamp*/
+
+
+
