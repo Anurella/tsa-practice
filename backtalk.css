@@ -311,13 +311,11 @@ header {
   }
 }
 
-@media (min-width: 300px) and (max-width: 500px) {
+@media (max-width: 50rem) {
    /* Styles for viewports between 300px and 500px. */
     body {
      background-color: #00ff00;
     }
-
-   
   /* Styles for viewports wider than 50em and narrower than 60em. */
 }
 
@@ -338,10 +336,10 @@ header {
    body::after {
     content: "Portrait";
   }
-
+/* 
   body {
     background-color: #245;
-  }
+  } */
 }
 
 
