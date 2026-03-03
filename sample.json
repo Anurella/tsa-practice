@@ -1,0 +1,15 @@
+{
+    "name": "John Doe",
+    "age": 30,
+    "email": "",
+    "children": [
+        {
+            "name": "Ada Doe",
+            "age": 5
+        },
+        {
+            "name": "Bob Doe",
+            "age": 3
+        }
+    ]
+}
