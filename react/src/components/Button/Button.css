@@ -1,0 +1,39 @@
+.button {
+    
+    /* display: flex; */
+    align-items: center;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    line-height: 1.2;
+    text-decoration: none;
+    border: none;
+    white-space: nowrap;
+    padding-inline: calc(10px * 2);
+    min-width:250px;
+    font-weight: 500;
+    aspect-ratio: 1;
+    height:50px;
+    justify-content: center;
+    box-sizing: border-box;
+   transition: border-color 0.25s;
+
+    button:hover {
+  border-color: #646cff;
+}
+&:focus,
+&:focus-visible {
+  outline: 4px auto;
+}
+
+}
+
+.girl {
+  color: hsl(0, 0%, 100%);
+  background-color: hsla(135, 41%, 21%, 1);
+}

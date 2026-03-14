@@ -175,12 +175,14 @@ section.appendChild(para9);
  const list = document.querySelector("ul");
  const input = document.querySelector("input");
  const button = document.querySelector(".addItem");
+ let arr = ["Bread", "Milk", "Eggs"];
 
 button.addEventListener("click", (event) => {
   event.preventDefault();
 
   //  this is getting the value of the input
   let listOption = input.value; 
+  arr.push(listOption);
   input.value = "";
 
   const listItem = document.createElement("li");
@@ -204,6 +206,38 @@ button.addEventListener("click", (event) => {
    input.focus();
 
 })
+
+function renderArray() {
+  const listItem = document.createElement("li");
+  const listText = document.createElement("span");
+  const listBtn = document.createElement("button");
+
+  listBtn.addEventListener("click", () => {
+    listItem.remove()
+    // list.removeChild(listItem);
+  })
+
+  for(const element of arr) {
+listItem.appendChild(listText);
+    listText.textContent = element;
+    listItem.appendChild(listBtn);
+    listBtn.textContent = "Delete";
+  }
+ list.appendChild(listItem);
+
+  
+
+  // while (arr.length > 0) {
+  //   list.appendChild(listItem);
+  // }
+}
+
+window.onload = function() {
+  renderArray();
+}
+
+// build a to do list 
+
 
 
 // json 
@@ -237,5 +271,6 @@ const data = {
 console.log(JSON.stringify(data));
 
 
-const element = document.createElement(h1)
+
+
 

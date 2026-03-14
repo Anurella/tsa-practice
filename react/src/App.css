@@ -1,5 +1,4 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
@@ -41,6 +40,20 @@
   color: #888;
 }
 
-button {
-  width:300px;
+
+
+img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+  height:250px;
+  object-fit: cover;
+  aspect-ratio: 1;
+}
+
+article {
+  
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
 }
