@@ -15,7 +15,7 @@ show the following
 
 A. Inheritance 
 B. demonstrate specifity 
-*/
+/* *///// */
 
 /* universal selector */
 
@@ -255,4 +255,66 @@ padding is optional but i do this because of lists*/
     touch-action: manipulation
 }
 
+
+
+
+.feature {
+  button {
+    color: blue;
+  }
+
+  .link {
+    color: red;
+  }
+
+  .text {
+    font-size: 1.3em;
+  }
+}
+
+
+.feature button {
+  color: blue;
+}
+
+.feature .link {
+   color: red;
+}
+
+.feature .text {
+   font-size: 1.3em;
+}
+
+.feature {
+  &:last-child {
+    /* Selects the .feature element that is
+    the :last-child, equivalent to .feature:last-child */
+  }
+   
+  & :last-child {
+    /* Selects the :last-child inside 
+    of a .feature element, equivalent to .feature :last-child */
+  }
+
+  &.highlight {
+    /* Selects .feature elements that also 
+    have a .highlight class, equivalent to .feature.highlight */
+  }
+
+  & .highlight {
+     /* Selects elements inside of the .feature 
+     element with the class .highlight, equivalent to .feature .highlight */
+  }
+}
+
+
+
+/* descendant combinator */
+article p {}
+
+/* child combinator */ 
+article > p {}
+
+/* next sibling selector */
+p + img {}
 
