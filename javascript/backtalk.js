@@ -113,8 +113,7 @@ if (season === "summer") {
 initializer
 while (condition) {
   // code to run
-
-  final-expression
+  // final-expression
 }
 
 // while example 
@@ -124,6 +123,8 @@ while( randomNum !== 3 ){
   console.log( `The number is not ${ randomNum }.` );
   randomNum = randomize();
 }
+
+
 console.log( `The correct number, ${ randomNum }, was found.` );
 
 let iterationCount = 0;
@@ -151,14 +152,22 @@ for (initializer; condition; final-expression) {
   // code to run
 }
 
+for(let i; i++; i < 5) {
+  //  do something here
+}
+
+
+
 const myIterable = [ true, false, true ];
-for( const myElement of myIterable ) {
+
+for ( const myElement of myIterable ) {
   console.log( myElement );
 }
 
 
 const myObject = { "myProperty" : true, "mySecondProperty" : false };
-for( const myKey in myObject ) {
+
+for ( const myKey in myObject ) {
   console.log( myKey );
 }
 
@@ -185,11 +194,13 @@ section.appendChild(para);
  * 
  * To complete the task:
 
-    Write a loop that iterates through the (phonebook) array and searches for the provided name. You should use a type of loop that you've not used in the previous task.
-    If the name is found, write it and the associated number into the textContent of the provided paragraph (para), in the form "<name>'s number is <number>." After that, exit the loop before it has run its course.
+    Write a loop that iterates through the (phonebook) array and searches for the provided name. 
+    You should use a type of loop that you've not used in the previous task.
+    If the name is found, write it and the associated number into the textContent of the provided paragraph (para), 
+    in the form "<name>'s number is <number>." After that, exit the loop before it has run its course.
     If none of the objects contain the name, print "Name not found in the phonebook" into the textContent of the provided paragraph.
-
  */
+
 // read about object.keys(), object.values(), and object.entries() methods for iterating over objects in more detail.
 
 // functions
@@ -211,6 +222,14 @@ function functionName(parameters) {
  * the return keyword
 */
 
+
+// declare 
+function arsenalWins() {
+  console.log("Arsenal would win champions and premier league");
+}
+
+// invoke 
+arsenalWins()
 
 // default parameter 
 function hello(name = "Chris") {

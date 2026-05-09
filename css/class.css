@@ -144,38 +144,35 @@ html {
 
 body {
     background-color: #1A1C20;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
 }
 
 main {
-  /* max-width: 600px;
+  max-width: 600px;
   margin: 0 auto;
-  transform: translateY(calc(50% - 40px)); */
-  max-width:600px;
   background-color: white;
-  display:flex;
   border-radius: 20px;
+  transform: translateY(calc(50% - 40px));
+
+}
+
+
+main > div {
+   /* display: inline-block;  -- use of this made it hard to allow the image grow*/ 
+   display: table-cell;
+   vertical-align: top;
 }
 
 .left_hand_item {
     width:40%;
-    /* background: url("https://images.unsplash.com/photo-1622618991746-fe6004db3a47") center center/cover no-repeat; */
-    /* height:100%; */
+    background: url("https://images.unsplash.com/photo-1622618991746-fe6004db3a47") center center/cover no-repeat;
+    height:100%;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-
-    img {
-        height: 100%;
-        object-fit: cover;
-        border-top-left-radius: 20px;
-        border-bottom-left-radius: 20px;
-    }
-} 
+}
 
 
- .right_hand_item {
+.right_hand_item {
     width:60%;
     padding:40px;
 
@@ -219,87 +216,19 @@ main {
             vertical-align: text-bottom;
         }
     }
-} 
+}
 
 
 /* (0,0,0) (A,B,C) */
 /* type selectors  */
-/* class-like selctors */
+/* class-like selectors */
 
-/* .girl {
+.girl {
     color: green;
     font-size:30px;
 }
 
 .girl:nth-of-type(2) {
     color: blue;
-} */
-
-
-/* (0,1,0) */
-/* .girl {
-    text-decoration:underline;
-} */
-/* 
-.girl {
-   text-decoration: none; 
-} */
-
-/* (0,0,1) */
-/* p {
-    font-size:20px;
-} */
-
-
-
-
-/* (1,0,0) */
-#test {
-    color:purple;
 }
 
-/* specificity */
-
-/* .girl {
-    color:yellow;
-}
-
-p {
-    color: purle;
-} */
-
-/* * {
-    color: red;
-}
-
-p {
-    text-align: center;
-}
-
-::selection {
-    background-color: #1A1C20;
-    color: white;
-}
-
-:is(h1, h2, h3) {
-  color: blue;
-}
-
-:is(h1, h2, h3, #my-heading) {
-  color: blue;
-} */
-
-
-
-/* Global color styles for paragraph in authored CSS */
-/* p {
-	padding-top: 2em;
-	color: goldenrod;
-  border: dotted medium grey;
-} */
-
-/* We don't want our styles to apply in asides, so we use revert */
-/* aside p {
-	padding-top: revert;
-	color: revert;
-} */

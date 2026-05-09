@@ -211,22 +211,40 @@ img {
     border:1px solid purple;
  }
 
- .fard-container {
-    display: flex;
+ article {
+    /* display:flex; */
+    /* flex-direction: column-reverse; */
     /* padding:20px; */
+    /* width:200px; */
     height:300px;
-    width:200px;
     border:1px solid red;
-    flex-flow: column wrap;
-    align-items: center;
-    /* justify-content:space-around; */
-    /* align-content: space-between; */
+    /* flex-wrap prevents overflow of children in parent container */
+    /* flex-wrap: wrap;   */
+    /* flex-flow: column wrap;
+    align-items: center; */
+    /* justify-content:space-between; */
+    /* align-content: space-around; */
+    /* align-items:start; */
     /* place-content: space-around; */
+
+    section {
+        background: #245;
+        color:#fff;
+        padding:10px;
+        border:1px solid orange;
+        /* flex-grow:1; */
+        /* flex-shrink: 0; */
+        flex-basis:15%;
+        /* min-width:50px; */
+        height:100px;
+    }
  }
 
   .leavemealone {
     /* align-self:center; */
   }
+
+
  /*
  GRID LAYOUT PRACTICE
  1. Style the article with grid layout make it a grid container.
@@ -251,21 +269,39 @@ img {
     border:1px solid orange;
 }
 
-.grid-container-1 {
+.grid-container {
     display:grid;
-    grid-template-columns:repeat(5, minmax(100px, 40%));
-    gap:10px;
+    /* grid-template-columns:repeat(5, minmax(100px, 40%));
+    gap:10px; */
     border:1px solid green;
     padding:20px;
+  grid-template-columns:repeat(4, minmax(0, 1fr));
+  grid-template-rows:repeat(2, 100px);
+  gap:10px;
 }
 
-.item-3 {
+/* .item-3 {
     grid-column-start:1;
     grid-column-end: 3;
+} */
+
+.item-3 {
+
+  background-color:red;
+/*   grid-column:1; */
+/*   grid-column-start:2;
+  grid-column-end:4; */
+ grid-row:auto / span 3;
+  text-align:center;
+  
+  img {
+    object-fit: cover;
+    aspect-ratio: 1/1;
+  }
 }
 
 .grid-container-2 {
-    display: grid;
+    /* display: grid; */
     grid-template-areas: 
     "header header header header"
     "sidebar content content content"
@@ -314,7 +350,7 @@ header {
 @media (max-width: 50rem) {
    /* Styles for viewports between 300px and 500px. */
     body {
-     background-color: #00ff00;
+     background-color: #b0feb0;
     }
   /* Styles for viewports wider than 50em and narrower than 60em. */
 }
@@ -346,5 +382,53 @@ header {
 
 /* responsive typography - show scaling of text based on viewport width and use of clamp*/
 
+
+
+
+
+.test {
+    text-align: center;
+}
+.button {
+  background-color: gray;
+ 
+        border:none;
+        color:#000000;
+        padding:14px 20px;
+        border-radius: 8px;
+        width: 180px;
+        font-weight: bold;
+        text-align: left;
+        font-size: 0.875rem;
+        /* animation-name: user;
+        animation-duration: 3s;
+        animation-iteration-count: 2;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: backwards;
+        animation-direction: forwards; */
+        animation: user 3s cubic-bezier(.47,-0.21,.36,.98) infinite;
+
+  /* transition: background-color 0.3s ease; */
+}
+
+.button:hover {
+  background-color: indigo;
+}
+
+
+/* @keyframes user {
+    0% {
+        transform: scaleX(1);
+    }
+
+    50% {
+        background:yellow;
+        transform:translateX(40px)
+    }
+
+    100% {
+        transform: scaleX(2)
+    }
+} */
 
 

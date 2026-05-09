@@ -22,7 +22,7 @@ const para8 = document.querySelector(".test5 p");
 // Fix the following code
 
 let myName = "Default";
-myName = "Chris";
+
 
 
 let myAge = 42;
@@ -113,7 +113,6 @@ para7.textContent = response;
 
 
  // code for practice 5
-
  const names = [
   "Chris",
   "Li Kang",
@@ -143,6 +142,15 @@ para8.textContent = shortNames;
 
 let i = 500;
 const para9 = document.createElement("p");
+function isPrime(num) {
+  for (i; i < num; i++) {
+    if (num % i === 0) {
+      return false;
+    }
+      para.textContent += `${i}, `;
+  }
+  return true;
+}
 
 // Don't edit the code above here!
 
