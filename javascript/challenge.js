@@ -24,6 +24,7 @@ let myAge = 42;
 // Don't edit the code below here!
 para1.textContent = myName;
 para2.textContent = `In 20 years, I will be ${myAge + 20}`;
+document.querySelector(".remove").remove();
 section1.appendChild(para1);
 section1.appendChild(para2);
 
@@ -36,7 +37,7 @@ section1.appendChild(para2);
 let result = (7 + 13 / 9) + 7;
 let result2 = 100 / 2 * 6;
 
-result = result * result;
+// result = result * result2;
 result *= result2;
 
 

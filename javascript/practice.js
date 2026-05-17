@@ -1,7 +1,4 @@
 
-
-
-
 // do not edit this code!
 const section1 = document.querySelector(".test1");
 const section2 = document.querySelector(".test2");
@@ -264,6 +261,8 @@ const parsedData = `{
         }
     ]
 }`;
+
+let test = JSON.parse(parsedData);
 
 const dataObject = "struffhfh"
 

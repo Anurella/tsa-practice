@@ -1,210 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Planet Story  </title>
-    <link rel="stylesheet" href="../css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta http-equiv="Content-Security-Policy" content="connect-src *"> -->
+  <title> Planet Story </title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-<header>
-  <img src="./images/planet.png" alt="a planetary logo" height="40px">
-</header>
-<hr />
-<main>
-  <section class="hero">
-    <h1>
-      Explore Our Solar System Through Data
-    </h1>
-    <p> This is our take on balancing the vegan and meat lifestyle.</p>
-    <p>This blend makes it easy for you to have all the nutrients required in a given portion ordered.</p>
-    <div>
-      <button> Explore the data </button>
-      &nbsp; &nbsp;
-      <a href=""> Contact us </a>
-    </div>
-  </section>
-  <hr>
-  <section class="video">
-     <h2>How Planetary Data Helps Us Understand Space</h2>
-     <p> Over here it is very important to us that everyone has something that they would love to eat.</p>
-
-    <video controls muted autoplay loop width="500">
-      <source src="https://www.pexels.com/download/video/4980005/" type="video/mp4">
-      <p> Your browser does not support this video </p>
-    </video>
-   
-  </section>
-  <hr>
-  <section class="menu_options">
-    <h2>Visualizing the Differences Between Planets</h2>
-    <p> Each planet in our solar system has unique physical characteristics. Visual comparisons help highlight how vastly different terrestrial planets are from gas giants and ice giants.</p>
-    <img src="https://plus.unsplash.com/premium_photo-1717620945061-fdb31301a205?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="variety of dishes served here">
-  </section>
-  <hr>
-  <section>
-    <h2>Planetary Facts at a Glance</h2>
-    <p> Below is a comparative table of major planets in our solar system. The data highlights key physical properties used by astronomers and researchers worldwide.</p>
-
-    <table>
-      <caption> Data about the planets of our solar system (Planetary facts taken from Nasa)</caption>
-      <thead>
-        <tr>
-          <td colspan="2"></td>
-          <th scope="col">Name</th>
-          <th scope="col">Mass (10<sup>24</sup>kg)</th>
-          <th scope="col">Diameter (km)</th>
-          <th scope="col">Density (kg/m<sup>3</sup>)</th>
-          <th scope="col">Gravity (m/s<sup>2</sup>)</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th colspan="2" rowspan="4" scope="rowgroup">Terrestrial planets</th>
-          <th scope="row">Mercury</th>
-          <td>0.330</td>
-          <td>4,879</td>
-          <td>5427</td>
-          <td>3.7</td>
-
-        </tr>
-        <tr>
-          <th scope="row">Venus</th>
-          <td>4.87</td>
-          <td>12,104</td>
-          <td>5243</td>
-          <td>8.9</td>
-
-        </tr>
-        <tr>
-          <th scope="row">Earth</th>
-          <td>4.87</td>
-          <td>12,104</td>
-          <td>5243</td>
-          <td>8.9</td>
-
-        </tr>
-        <tr>
-          <th scope="row">Mars</th>
-          <td>4.87</td>
-          <td>12,104</td>
-          <td>5243</td>
-          <td>8.9</td>
-
-        </tr>
-        <tr>
-          <th rowspan="4" scope="rowgroup">Jovian planets</th>
-          <th rowspan="2" scope="rowgroup">Gas giants</th>
-          <th scope="row">Jupiter</th>
-          <td>1898</td>
-          <td>142,984</td>
-          <td>1326</td>
-          <td>23.1</td>
-        </tr>
-        <tr>
-          <th scope="row">Saturn</th>
-          <td>568</td>
-          <td>120,536</td>
-          <td>687</td>
-          <td>9.0</td>
-        </tr>
-        <tr>
-          <th rowspan="2" scope="rowgroup">Ice giants</th>
-          <th scope="row">Uranus</th>
-          <td>86.8</td>
-          <td>51,118</td>
-          <td>1271</td>
-          <td>8.7</td>
-        </tr>
-        <tr>
-          <th scope="row">Neptune</th>
-          <td>102</td>
-          <td>49,528</td>
-          <td>1638</td>
-          <td>11.0</td>
-        </tr>
-        <tr>
-          <th colspan="2" scope="rowgroup">Dwarf planets</th>
-          <th scope="row">Pluto</th>
-          <td>0.0146</td>
-          <td>2,370</td>
-          <td>2095</td>
-          <td>0.7</td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
-  <hr>
-  <section>
-    <h2> Have Questions About Planetary Science?</h2>
-    <p> Interested in learning more about space, astronomy, or how planetary data is collected and analyzed? Reach out and we’ll get back to you.</p>
-    <form action="/" method="get">
-      <table cellspacing="30">
-        <tr>
-          <td>
-            <label>
-              Full name
-              <br />
-              <input type="text" placeholder="fullname" name="fullname">
-            </label>
-          </td>
-          <td colspan="3"> </td>
-          <td>
-            <label>
-              Email <br />
-              <input type="email" placeholder="email@email.com">
-            </label>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <label for="cities">
-              City </label>
-            <br />
-            <select name="cities" id="cities">
-              <option value="">Select City</option>
-            </select>
-
-          </td>
-          <td colspan="3"> </td>
-          <td>
-            <label for="phoneNumber">
-              Phone number
-            </label>
-            <br />
-            <input type="tel" maxlength="10" name="phoneNumber" placeholder="phone number" id="phoneNumber">
-          </td>
-        </tr>
-      </table>
-
-    </form>
-  </section>
-</main>
-<hr>
-<footer>
-  <div>
-    <h3> About Us </h3>
-    <ul>
-      <li><a href="#"> How it works </a></li>
-      <li><a href="#"> Featured </a></li>
-      <li><a href="#">Partnerships </a></li>
-      <li><a href="#"> Business relations </a></li>
-    </ul>
-  </div>
+  <header>
+    <img src="./images/planet.png" alt="a planetary logo" height="40px">
+  </header>
   <hr />
-  <div>
-    <span>&copy; Amaka 2026</span>
+  <main>
+    <section class="hero">
+      <h1>
+        Explore Our Solar System Through Data
+      </h1>
+      <p> This is our take on balancing the vegan and meat lifestyle.</p>
+      <p>This blend makes it easy for you to have all the nutrients required in a given portion ordered.</p>
+      <div>
+        <button> Explore the data </button>
+        &nbsp; &nbsp;
+        <a href=""> Contact us </a>
+      </div>
+    </section>
+    <hr>
+    <section class="video">
+      <h2>How Planetary Data Helps Us Understand Space</h2>
+      <p> Over here it is very important to us that everyone has something that they would love to eat.</p>
 
-    <span> &nbsp; &nbsp; </span>
-    <span> &nbsp;&nbsp; </span>
-    <a href="">Privacy Policy</a>
-    &nbsp;&nbsp;
-    <a href=""> Terms and conditions </a>
-  </div>
-</footer>
+      <video controls muted autoplay loop width="500">
+        <source src="https://www.pexels.com/download/video/4980005/" type="video/mp4">
+        <p> Your browser does not support this video </p>
+      </video>
+
+    </section>
+    <hr>
+    <section class="menu_options">
+      <h2>Visualizing the Differences Between Planets</h2>
+      <p> Each planet in our solar system has unique physical characteristics. Visual comparisons help highlight how
+        vastly different terrestrial planets are from gas giants and ice giants.</p>
+      <!-- <img
+        src="https://plus.unsplash.com/premium_photo-1717620945061-fdb31301a205?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="variety of dishes served here"> -->
+
+      <div class="img-wrapper">
+        <img src="https://images.pexels.com/photos/20337604/pexels-photo-20337604.jpeg" alt="planet with rings"
+          class="dog">
+        <img src="https://images.pexels.com/photos/12491599/pexels-photo-12491599.jpeg" alt="planets">
+        <img src="https://images.pexels.com/photos/12498801/pexels-photo-12498801.jpeg" alt="rocky planet">
+        <img src="https://images.pexels.com/photos/12491599/pexels-photo-12491599.jpeg" alt="">
+        <img src="https://images.pexels.com/photos/12498815/pexels-photo-12498815.jpeg" alt="">
+        <img src="https://images.pexels.com/photos/12491599/pexels-photo-12491599.jpeg" alt="">
+        <img src="https://images.pexels.com/photos/20376394/pexels-photo-20376394.jpeg" alt="">
+        <img src="https://images.pexels.com/photos/12491599/pexels-photo-12491599.jpeg" alt="">
+      </div>
+    </section>
+    <hr>
+    <section>
+      <h2>Planetary Facts at a Glance</h2>
+      <p> Below is a comparative table of major planets in our solar system. The data highlights key physical properties
+        used by astronomers and researchers worldwide.</p>
+
+      <table>
+        <caption> Data about the planets of our solar system (Planetary facts taken from Nasa)</caption>
+        <thead>
+          <tr>
+            <td colspan="2"></td>
+            <th scope="col">Name</th>
+            <th scope="col">Mass (10<sup>24</sup>kg)</th>
+            <th scope="col">Diameter (km)</th>
+            <th scope="col">Density (kg/m<sup>3</sup>)</th>
+            <th scope="col">Gravity (m/s<sup>2</sup>)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th colspan="2" rowspan="4" scope="rowgroup">Terrestrial planets</th>
+            <th scope="row">Mercury</th>
+            <td>0.330</td>
+            <td>4,879</td>
+            <td>5427</td>
+            <td>3.7</td>
+
+          </tr>
+          <tr>
+            <th scope="row">Venus</th>
+            <td>4.87</td>
+            <td>12,104</td>
+            <td>5243</td>
+            <td>8.9</td>
+
+          </tr>
+          <tr>
+            <th scope="row">Earth</th>
+            <td>4.87</td>
+            <td>12,104</td>
+            <td>5243</td>
+            <td>8.9</td>
+
+          </tr>
+          <tr>
+            <th scope="row">Mars</th>
+            <td>4.87</td>
+            <td>12,104</td>
+            <td>5243</td>
+            <td>8.9</td>
+
+          </tr>
+          <tr>
+            <th rowspan="4" scope="rowgroup">Jovian planets</th>
+            <th rowspan="2" scope="rowgroup">Gas giants</th>
+            <th scope="row">Jupiter</th>
+            <td>1898</td>
+            <td>142,984</td>
+            <td>1326</td>
+            <td>23.1</td>
+          </tr>
+          <tr>
+            <th scope="row">Saturn</th>
+            <td>568</td>
+            <td>120,536</td>
+            <td>687</td>
+            <td>9.0</td>
+          </tr>
+          <tr>
+            <th rowspan="2" scope="rowgroup">Ice giants</th>
+            <th scope="row">Uranus</th>
+            <td>86.8</td>
+            <td>51,118</td>
+            <td>1271</td>
+            <td>8.7</td>
+          </tr>
+          <tr>
+            <th scope="row">Neptune</th>
+            <td>102</td>
+            <td>49,528</td>
+            <td>1638</td>
+            <td>11.0</td>
+          </tr>
+          <tr>
+            <th colspan="2" scope="rowgroup">Dwarf planets</th>
+            <th scope="row">Pluto</th>
+            <td>0.0146</td>
+            <td>2,370</td>
+            <td>2095</td>
+            <td>0.7</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <hr>
+    <section>
+      <h2> Have Questions About Planetary Science?</h2>
+      <p> Interested in learning more about space, astronomy, or how planetary data is collected and analyzed? Reach out
+        and we’ll get back to you.</p>
+      <form action="/" method="get">
+        <table cellspacing="30">
+          <tr>
+            <td>
+              <label>
+                Full name
+                <br />
+                <input type="text" placeholder="fullname" name="fullname">
+              </label>
+            </td>
+            <td colspan="3"> </td>
+            <td>
+              <label>
+                Email <br />
+                <input type="email" placeholder="email@email.com">
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="cities">
+                City </label>
+              <br />
+              <select name="cities" id="cities">
+                <option value="">Select City</option>
+              </select>
+
+            </td>
+            <td colspan="3"> </td>
+            <td>
+              <label for="phoneNumber">
+                Phone number
+              </label>
+              <br />
+              <input type="tel" maxlength="10" name="phoneNumber" placeholder="phone number" id="phoneNumber">
+            </td>
+          </tr>
+        </table>
+
+      </form>
+    </section>
+  </main>
+  <hr>
+  <footer>
+    <div>
+      <h3> About Us </h3>
+      <ul>
+        <li><a href="#"> How it works </a></li>
+        <li><a href="#"> Featured </a></li>
+        <li><a href="#">Partnerships </a></li>
+        <li><a href="#"> Business relations </a></li>
+      </ul>
+    </div>
+    <hr />
+    <div>
+      <span>&copy; Amaka 2026</span>
+
+      <span> &nbsp; &nbsp; </span>
+      <span> &nbsp;&nbsp; </span>
+      <a href="">Privacy Policy</a>
+      &nbsp;&nbsp;
+      <a href=""> Terms and conditions </a>
+    </div>
+  </footer>
+  <script src="javascript/asyncc.js"></script>
 </body>
+
 </html>
-
-
-
-

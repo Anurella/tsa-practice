@@ -306,8 +306,6 @@ padding is optional but i do this because of lists*/
   }
 }
 
-
-
 /* descendant combinator */
 article p {}
 
@@ -317,3 +315,16 @@ article > p {}
 /* next sibling selector */
 p + img {}
 
+
+
+.img-wrapper {
+  display:grid;
+  grid-template-columns:repeat(auto-fill, minmax(calc(100%/5),1fr));
+  gap:10px;
+}
+
+.img-wrapper img{
+  height:300px;
+  object-fit: cover;
+  border-radius:8px;
+}
