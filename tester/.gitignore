@@ -6,14 +6,11 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
-.pdf
 
 node_modules
 dist
 dist-ssr
 *.local
-tester
-react
 
 # Editor directories and files
 .vscode/*
